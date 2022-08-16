@@ -1,0 +1,358 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"); */
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Roboto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.barra-topo {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-instagram {
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: #dbdbdb;
+}
+.insta-botao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.borda {
+  width: 1px;
+  height: 22px;
+  background-color: #000000;
+  margin: 0px 10px;
+}
+
+.notificacoes {
+  width: 140px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.icone-notificacao {
+  display: block;
+}
+.barra-de-pesquisa {
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  border: 1px solid #dbdbdb;
+}
+h2 {
+  color: #979797;
+  font-size: 12px;
+}
+.container {
+  width: 100%;
+  height: 2521px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.caixa-esquerda {
+  width: 614px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+.barra-storys {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow: hidden;
+  /* margin-top: 33px;
+  margin-bottom: 24px; */
+}
+.barra-storys ion-icon[name="chevron-forward-circle"] {
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: 8px;
+}
+.stories {
+  margin: 18px 8px;
+}
+
+.barra-storys .stories .text-user p {
+  width: 78px;
+  font-style: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barra-storys .stories-background {
+  background-image: url(stories_background.png);
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.barra-storys img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.postagem {
+  background-color: khaki;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.postagem .postagem-img img {
+  width: 100%;
+}
+.barra-postagem {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+.barra-postagem img {
+  background-color: #ffff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  margin: 15px 15px;
+}
+.barra-postagem .user {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #262626;
+  font-style: normal;
+  display: flex;
+  text-overflow: ellipsis;
+}
+.icone-user {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.barra-curtidas {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px;
+}
+.box-icons {
+  width: 93px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foto-perfil-curtida {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: block;
+}
+.texto-curtidas {
+  font-family: Roboto;
+  margin: 0px;
+}
+
+b {
+  font-weight: 700;
+}
+
+.caixa-direita {
+  margin-top: 57px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 17px;
+}
+.sidebar {
+  width: 300px;
+  height: 449px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.caixa-icone-user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.texto-sidebar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 0px 17px;
+}
+.icone-sidebar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.user-sidebar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 17px;
+}
+.sugestoes {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.caixa-icone-sugestoes {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+.usuario-sugestoes {
+  display: flex;
+  align-items: center;
+}
+.icone-sugestoes {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.texto-sugestoes {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 17px;
+}
+
+.seguir {
+  display: block;
+  color: #139ef2;
+}
+
+.box-infos {
+  width: 300px;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  flex-direction: column;
+  color: #c7c7c7;
+}
+.infos-pag-insta {
+  margin-bottom: 26px;
+}
+@media (max-width: 935px) {
+  .caixa-direita {
+    display: none;
+  }
+  .barra-topo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .borda {
+    width: 1px;
+    height: 22px;
+
+    background: #dbdbdb;
+  }
+}
+.barra-topo-mobile {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+}
+
+@media (max-width: 614px) {
+  .barra-topo-mobile {
+    box-shadow: none;
+  }
+  .barra-topo {
+    display: none;
+  }
+
+  .caixa-esquerda {
+    width: 100%;
+    margin-top: none;
+  }
+  .barra-storys ion-icon[name="chevron-forward-circle"] {
+    display: none;
+  }
+  .container {
+    margin-top: 17px;
+  }
+  .barra-storys {
+    box-shadow: none;
+    margin-top: none;
+    margin-bottom: none;
+  }
+  .menu-mobile {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 614px) {
+  .barra-topo-mobile {
+    display: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
